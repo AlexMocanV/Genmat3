@@ -1,1 +1,27 @@
+#include <iostream>
 
+using namespace std;
+long long int n,m,x[25][25],i,j,y=1;
+
+int main()
+{
+   
+   cin>>n>>m;
+   for(i=1;i<=n;i++)
+   {
+       for(j=1;j<=m;j++)
+       {
+         x[i][j]=y*y;
+         y+=2;
+       }
+   }
+    for(i=1;i<=n;i++)
+   {
+       for(j=1;j<=m;j++)
+       {
+          cout<<x[i][j]<<" "; 
+       }
+       cout<<endl;
+   }   
+    return 0;
+}
